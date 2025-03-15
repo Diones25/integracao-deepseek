@@ -1,6 +1,6 @@
 import { IsString } from "class-validator";
 
-export class PromptChatGtpDto {
+export class PromptDeepSeekDto {
 
   @IsString({ message: 'Deve ser uma string' })
   prompt: string;
