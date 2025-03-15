@@ -26,6 +26,7 @@ export class DeepSeekService {
       const response = await axios.post(`${this.baseUrl}/chat/completions`, data, { headers });
       return response.data;
     } catch (error) {
+      console.error('Erro ao chamar a API DeepSeek:', error.response?.data || error.message);
       throw new BadRequestException(`Erro ao enviar mensagem para DeepSeek: ${error.message}`);
     }
   }
