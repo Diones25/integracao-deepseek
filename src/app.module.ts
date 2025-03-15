@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
+import { DeepSeekModule } from './deep-seek/deep-seek.module';
 
 @Module({
-  imports: [],
+  imports: [DeepSeekModule],
   controllers: [],
   providers: [],
 })
